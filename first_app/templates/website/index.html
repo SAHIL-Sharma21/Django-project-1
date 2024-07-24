@@ -1,21 +1,7 @@
-{% load static %}  <!--This will load the static files which is important-->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django First project</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">  <!--This is how tenplate engine loads in django-->
-</head>
-<body>
-    <h1>Django first project</h1>
+{% extends "layout.html" %} 
 
-    <div class="div1">
-        <h2>Django documentation</h2>
-        <button id="btn1">Get Link</button>
-         <p id="para1"></p>
-    </div>
+{% block title %} Home Page {% endblock %} 
 
-    <script src="{% static 'script.js' %}"></script>
-</body>
-</html>
+{% block content %}
+<h1>Sahil app | Home Page</h1>
+{% endblock %}

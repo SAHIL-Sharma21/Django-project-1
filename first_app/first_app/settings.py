@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+#when we create our new app then we have to make this aware that we have new app ->  this is important step
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'new_app',
 ]
 
 MIDDLEWARE = [
