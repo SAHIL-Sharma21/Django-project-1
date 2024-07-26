@@ -16,6 +16,7 @@ class chaiVariety(models.Model):
     type = models.CharField(max_length=2, choices=CHAI_TYPE_CHOICE)
     #adding new field
     description = models.TextField(default="")
+    price = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
 
 
 

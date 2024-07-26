@@ -3,10 +3,18 @@
 {% block title %} chai detail page {% endblock %} 
 
 {% block content %}
-<h1>chai detail page</h1>
+<h1 class="text-4xl font-medium">chai detail page</h1>
 
-<h3>{{chai.name}}</h3>
-<p>{{chai.description}}</p>
+<div class="container flex flex-grow justify-center items-center mx-auto py-10">
+    <div class="bg-slate-400 p-8 rounded-lg max-w-lg w-full shadow-lg">
+        <img src={{chai.image.url}} alt={{chai.name}} class="w-full h-96 object-cover rounded-t-lg">
+        <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-4">{{chai.name}}</h3>
+            <p class="text-xl font-medium">Price: ${{chai.price}}</p>
+            <p class="text-lg">{{chai.description}}</p>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
 
